@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import UseReview from '../../Hooks/UseReview';
 import './Review.css'
 
 const Review = ({ review }) => {
-    const [allReview, setAllReview] = UseReview([])
-
+    const reviews = [UseReview]
     const { reviewerImg, name, about } = review
     return (
         <div>
@@ -14,8 +13,6 @@ const Review = ({ review }) => {
                     <h4>{name}</h4>
                     <p>{about}</p>
                 </div>
-
-
             </div>
 
 
