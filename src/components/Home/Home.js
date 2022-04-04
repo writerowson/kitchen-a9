@@ -1,11 +1,12 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import UseReview from '../../Hooks/UseReview';
 import Footer from '../Footer/Footer';
 import img from '../image/heading-img.png'
-import Review from '../Review/Review';
+
 import './Home.css'
+import AllReview from '../AllReview/AllReview';
 
 const Home = () => {
     const [reviews, setReview] = UseReview([])
@@ -28,10 +29,10 @@ const Home = () => {
                 <div className="container">
                     <div className='review-container'>
                         {
-                            reviews.map(review => <Review
+                            reviews?.slice(0, 3)?.map(review => <AllReview
                                 key={review._id}
                                 review={review}
-                            ></Review>)
+                            ></AllReview>)
                         }
                     </div>
                     <button style={{ backgroundColor: 'RGB(220,77,1)' }} type="button" class="btn text-light fw-bold mt-3">See all reviews</button>

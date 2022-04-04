@@ -6,8 +6,8 @@ const UseReview = () => {
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
-            .then(data => setReview(data.slice(0, 3)))
-    })
+            .then(data => setReview(data))
+    }, [])
     return [review, setReview]
 };
 
