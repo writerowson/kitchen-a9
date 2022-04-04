@@ -1,11 +1,23 @@
 import React from 'react';
-import useReview from '../Hooks/useReview'
+import UseReview from '../../Hooks/UseReview';
+import './Review.css'
 
-const Review = () => {
-    const [allReviews, setAllReview] = useReview([])
+const Review = ({ review }) => {
+    const [allReview, setAllReview] = UseReview([])
+
+    const { reviewerImg, name, about } = review
     return (
         <div>
-            <h5>THis is review</h5>
+            <div className="">
+                <div>
+                    <img style={{ height: ' 150px', width: '155px' }} src={reviewerImg} alt="" />
+                    <h4>{name}</h4>
+                    <p>{about}</p>
+                </div>
+
+
+            </div>
+
 
         </div>
     );
