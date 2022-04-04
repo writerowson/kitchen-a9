@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav a {
+    margin-left: 50px;
+
+}
+
+nav a:hover {
+    color: green
+}
