@@ -3,7 +3,12 @@ import React from 'react';
 const About = () => {
     return (
         <div>
-            <h5>THis is About</h5>
+            <p>
+                * Cooking Express is a shoping site of  Kitchen Appliances.
+                * Here we sell latest model of Kitchen Appliances.
+                * We have plan to  provide services in future to how they can use those longlasting.
+                * In this year we get 25 milion revenue in USD only from local Market, Now switch to global market next year.
+            </p>
         </div>
     );
 };
