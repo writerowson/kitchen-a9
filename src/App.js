@@ -9,6 +9,7 @@ import About from './components/About/About';
 import Header from './components/Header/Header';
 import NotFound from './components/Not-found/NotFound';
 import AllReview from './components/AllReview/AllReview';
+import BarChart from './components/BarChart/BarChart';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/home' element={<Home></Home>} ></Route>
         <Route path='review' element={<AllReview></AllReview>} ></Route>
-        <Route path='dashboard' element={<Dashboard></Dashboard>} ></Route>
+        <Route path='dashboard' element={<Dashboard ></Dashboard>} ></Route>
         <Route path='blog' element={<Blog></Blog>} ></Route>
         <Route path='about' element={<About></About>} ></Route>
         <Route path='*' element={<NotFound></NotFound>} ></Route>
