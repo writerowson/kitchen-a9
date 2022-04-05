@@ -43,7 +43,7 @@ const Dashboard = () => {
     return (
         <div className=' mx-5  row  '>
             <div className='col-lg-8 col-12 '>
-                <LineChart width={400} height={400} data={data} >
+                <LineChart width={380} height={400} data={data} >
                     <Line dataKey={'investment'}></Line>
                     <Line dataKey={'revenue'}></Line>
                     <XAxis dataKey={'month'}></XAxis>
@@ -53,8 +53,8 @@ const Dashboard = () => {
 
             </div>
 
-            <div className='col-lg-4 col-12 ' >
-                <PieChart width={300} height={500}>
+            <div className='col-lg-4 col-12 text-start ' >
+                <PieChart width={350} height={500}>
                     <Pie
                         dataKey="sell"
                         startAngle={180}
@@ -70,7 +70,7 @@ const Dashboard = () => {
                 </PieChart>
 
             </div>
-            <p >Simple line chart of Total investment, revenue and PieChart of sell in 2021</p>
+            <p  >Simple line chart of Total investment, revenue and PieChart of sell in 2021</p>
         </div>
     );
 };
