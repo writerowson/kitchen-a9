@@ -15,6 +15,7 @@ const AllReview = () => {
                         review={review}
 
                     ></DisplayReview>)
+
                 }
             </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import UseReview from '../../Hooks/UseReview';
 import Footer from '../Footer/Footer';
 import img from '../image/heading-img.png'
-
+import { AiFillStar } from "react-icons/ai"
 import './Home.css'
 
 import DisplayReview from '../DisplayReview/DisplayReview';
@@ -33,9 +33,11 @@ const Home = () => {
                             reviews?.slice(0, 3)?.map(review => <DisplayReview
                                 key={review._id}
                                 review={review}
-                            ></DisplayReview>)
+                            >  </DisplayReview>)
+
                         }
                     </div>
+
                     <button style={{ backgroundColor: 'RGB(220,77,1)' }} type="button" className="btn  fw-bold mt-3"> <CustomLink className='text-light' to='/review' >See all reviews</CustomLink> </button>
                 </div>
             </div>
