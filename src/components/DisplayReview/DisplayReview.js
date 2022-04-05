@@ -5,9 +5,10 @@ import { RiStarHalfFill } from "react-icons/ri"
 const DisplayReview = ({ review }) => {
     const { reviewerImg, name, about, } = review
     return (
-        <div className="">
-            <div>
-                <img style={{ height: ' 150px', width: '155px' }} src={reviewerImg} alt="" />
+        <div className="card ">
+            <div className='' style={{ border: '2px solid RGB(220,77,1)', borderRadius: '7px', height: '400px', padding: '40px' }}>
+                <img style={{ height: ' 150px', width: '155px', border: '2px solid RGB(220,77,1)', borderRadius: '80px', }}
+                    src={reviewerImg} alt="" />
                 <h4>{name}</h4>
                 <p>{about}</p>
 

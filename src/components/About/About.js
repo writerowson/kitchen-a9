@@ -12,7 +12,7 @@ const About = () => {
                 </p>
 
             </ul>
-            <Footer></Footer>
+
         </div>
     );
 };
